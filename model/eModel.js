@@ -1,10 +1,20 @@
 const mongoose = require("mongoose");
-const schema = mongoose.Schema();
 
-const eSchema = new schema({
- 
+const eSchema = new mongoose.Schema({
+  Area:{
+    type : String,
+    required : true
+},
+  Size:{
+    type : String,
+    required : true
+  },
+  Price:{
+    type : Number,
+    required : true
+  }
 }
-)
+);
 
-const eRentSchema = mongoose.model('eRents', eSchema);
+const eRentSchema = mongoose.model('Rents', eSchema);
 module.exports = eRentSchema;
