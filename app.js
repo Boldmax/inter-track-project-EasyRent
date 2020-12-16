@@ -22,4 +22,4 @@ db.once('open', () => console.log('connected to database'));
 
 
 
-app.listen(700, () => console.log('server is up and running!...'));
+app.listen(7000, () => console.log('server is up and running!...'));
